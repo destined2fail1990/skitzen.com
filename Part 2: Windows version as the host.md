@@ -7,18 +7,19 @@ So far it achieved what I wanted, I eliminated the CTRL + ALT requirement from V
 # Firewall Setup
 I wanted to touch on a little more how I have the firewall set up within my computer. Essentially I am using the virtual networking from VMWare and the Windows Advanced Firewall to ensure all traffic is blocked over the primary adapter, which for me right now is a wireless adapater. Wireless is solid enough now in the AC1000+ range and built into my new motherboard.
 
----------
+```
                     VM-1
                   /
 HOST - Firewall-VM 
       /           \ 
     /               VM-2
 HOST
----------
+```
 
 Here is an example of what it looks like coming from the host adapater, which with automatic routing off, ends up with a routing table like:
 
 # Host Routing Table:
+```
 ===========================================================================
 Interface List
   7...2c db 07 -- -- -- ......Intel(R) Dual Band Wireless-AC 3168
@@ -63,13 +64,14 @@ Network Destination        Netmask          Gateway       Interface  Metric
 ===========================================================================
 Persistent Routes:
   None
-
+```
 ## VMNet Adapters
 - VMNet1 is the default Host Only Adapter and isn't necessary due to the Firewall in place
 - VMNet8 is the default NAT Adapter and isn't actively used either.
 - VMNet19 is the adapater I am using as the 192.168.50.1/24 network, providing internet to the other devices. DHCP is served via an IPFire Firewall VM.
 
 # VM-1 Routing Table:
+```
 ===========================================================================
 Interface List
   8...00 50 56 -- -- -- ......Intel(R) 82574L Gigabit Network Connection
@@ -95,3 +97,4 @@ Network Destination        Netmask          Gateway       Interface  Metric
 ===========================================================================
 Persistent Routes:
   None
+```
