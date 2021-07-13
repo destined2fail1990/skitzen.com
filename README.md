@@ -1,2 +1,3 @@
-# skitzen.com
-My blog
+# About me 
+It's somewhat of a funny story. I started this blog because my friends tripped out on me like I'm some kind of hacker likely because I tell them all I'm just a "PC Tech". Well in retrospect, I guess I am. I'll hack at something until I get it to work. At least it feels that way at times, but to me it's a lot more than that. Technology has always been my passion and something I have been pretty decent at. Here you will find some of the various projects I have been working on. Might ask, why not on Facebook? Well that's apparently a trend someone else started. I'm just now playing catch up. Unfortunately I have always been more social online than I am in person.
+    
