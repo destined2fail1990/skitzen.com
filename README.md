@@ -1,0 +1,2 @@
+# skitzen.com
+My blog
