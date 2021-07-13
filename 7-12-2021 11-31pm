@@ -1,0 +1,66 @@
+- New blog!
+I'm working on using the following stack 
+
+-----------
+
+  - Hugo
+  - Vercel
+  - Webpack
+  - Gulp
+  - FaunaDB
+  - Percy
+  - Sentry
+  - ...and more: https://jarv.is/uses/
+  
+  ----------
+  
+  to set up a blog. Need to learn the markup, so will be practicing on here for a bit. Plan is to auto-generate based on github I suppose. Depends on the availability of the mobile app. 
+ 
+ So why did I decide to create a blog? Well I just completed what I would call a "sprint", where you spend long hours on projects, often with little to nothing to show for it. 
+ 
+ This weekend I redesigned my computer on a spare NVMe solid state hard drive. For those that don't know, that's where everything - literally - is stored, so you can typically swap them out and it's 
+ like you are using an entirely different computer. 
+ 
+ This past weekend I tried a build I have been wanting to do with Linux for some time now. 
+ 
+ Essentially, this is what I set out to achieve:
+ 
+ # Hypervisor
+ - Hypervisor
+     - Windows 10 VMX w/ GPU passthrough (dedicated GPU for CUDA)
+     - Debian / Fedora based OS (Non-CUDA)
+     - IPFire / pfSense / etc.
+     
+The hypervisor for this project was Xen in the super-hardened Qubes OS. A Qube is essentially a virtual computer that lets you interact with it without seeing a startup or login screen. What this boiled down
+to was having about 5 Firefox installations by default. I was able to clean it up a bit and get to what I was trying to do, where each monitor has an OS and they can flip around quickly. Unfortunately, I ended
+up wanting to put VMWare Workstation Pro within Windows 10, which was already inside of Xen. While Xen performed well even without the Nvidia drivers, I was not able to get virtualization to work within Xen for
+yet another virtualization. 
+
+# What's the point of all of this? Why not just use a KVM?
+A KVM lets you use one mouse and keyboard for multiple computers, which would achieve almost identically what I am doing aside from one thing: NVMe. It boils down to speed. Launch times. File copy rates. Processing power. This is why
+it is typically housed in a beef uped server, but the equivalent cost would be upwards of $10,000 and I'm capable for the most part of achieving the same thing with a Workstation. Especially nowadays. My workstation is actually my 
+gaming rig. 
+
+Specs are: 
+- 32gb ram
+- Ryzen 7 8 Core CPU
+- NVIDIA RTX 2070
+- 1TB NVMe
+
+This is the monstrosity I ended up with: 
+- Ryzen 7 (Migrating towards a Threadripper, but alas no need yet)
+- 64gb of RAM (using 32 already)
+- NVIDIA RTX 20/30/40 series
+- NVIDIA Quadro card (cheaper end, $100 used or something, log processing for 1 PC's worth of traffic so 1-2.5gbps)
+- 2.5Gbps PCI-E Card or new mobo w/ one to save a slot. A consumer hybrid w/ a built in ARM processor would be fine too. If you're capable of designing something like that. Why not, it'd take 2 slots. Maybe dual 2.5Gbps slots w/ port mirroring the bridge/NAT. API calls to respond to threats. Encryption or not, there are still patterns. Defeats the purpose of using the processing power for logs for CPU/Memory though too.
+- RAID of SATA SSD's using ZFS / SMB or maybe this new FS from Microsoft?
+- Dual 1TB M.2 drives for storage / speed / redundancy / whatever depending on limitations. Only because I have them already.
+
+About a $450 upgrade and it would fill the case. Every slot. An armor kit with all perks for the COD players. 
+
+I was trying to maximize what I could possibly achieve with one PC reasonably before scaling into the $1000/item cards and grid processing power. Again this is for a workstation, for me that could be the equivalent to someone's livingroom or movie room, others (like me) a computer chair or recliner. It's my go-to. It has to be comfortable.
+
+
+Some notable caveats that I ran into: OnlyKey/YubiKey support within the VM's w/o so many hoops. I caved and said I would just use it in Windows only and assigned the PCI device for that USB controller into the VM within Qubes OS. That's the equivalent of assigning a chunk of your PC as a ration to it's demon's that live within it.
+
+On that note. I'm watching the market. I know it would be achievable to start a business for gamer's to make some extra money. Rent that spare PC using that new 2.5Gbps DOCSIS 3.1 connection and network card to compute data. Large dataset in, small dataset out. Could help pay the internet bill if decentralized in a grid? Next evolution to Storj?
