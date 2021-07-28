@@ -15,6 +15,8 @@ These projects have a strong focus on:
 - Freedom of Speech
 - Decentralization, of storage and computing power, aka "grid computing"
 - Encryption/Security, both in transport and at rest
+- Self Hosted Software
+- Machine Learning (DIY/Community), for those bird watchers out there that want to automatically identify their birds.
 
 #### Continuum
 In other words, "Anti-NWO" (Preventing a second Holocost). A fear that quantum computing brings to me since I was a pre-teen and I was told it would break all my encryption that I used to hide my cheat codes, games, and collection of DVD rips and music. While I no longer condone pirating, I fear we have become to accustom to DRM, which for me started back in the early 2000's with Command & Conquer Generals: Zero Hour. It sucked, because if your internet bumped out even offline you were disconnected and unable to save your game. It's like the built DRM into the gameloop itself. I fear the day where we are all reliant on our accounts and passwords and the constitutional right to be secure in your possessions is void. I know I make enemies saying this, but: If I purchased something from a cloud service and it is mine, I should be able to have a copy in any way I see fit. DRM free. 
